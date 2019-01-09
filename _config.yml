@@ -107,11 +107,11 @@ analytics:
 # Site Author
 author:
   name             : "Jason Lee"
-  avatar           : 
+  avatar           : "humbahumba.jpg"
   # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Korea Univ. Statistics / Software Venture"
   location         : "Seoul, Korea"
-  email            :
+  email            : "jason2133@likelion.org"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
