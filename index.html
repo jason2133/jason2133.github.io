@@ -93,7 +93,7 @@
                             </div>
                             <ul style="list-style-type:circle">
                                 <li> 
-                                    2-year absence for Military Service in Republic of Korea (Sergeant, Republic of Korea Army)
+                                    2 years of absence for Military Service in Republic of Korea (Sergeant, Republic of Korea Army)
                                 </li>
                             </ul>
                         </div>
@@ -218,7 +218,7 @@
                                     Completed mandatory military service in South Korea as a Military Intelligence Specialist (MOS 151.101)
                                 </li>
                                 <li>
-                                    Received the Minister of National Defense Award at the 2020 National Defense Public Data Utilization Competition
+                                    Received the Minister of National Defense Award at the <a href="https://data.mnd.go.kr/sites/data/index.do">2020 National Defense Public Data Utilization Competition</a>
                                 </li>
                                 <li>
                                     Won 1st Place and received the Division Commander’s Award at the 2020 Republic of Korea Army Self-Development Essay Contest
@@ -1072,5 +1072,16 @@
         </main>
         <!-- Core theme JS-->
         <script src="js/navigation-v2.js"></script>
+        <script>
+            document.querySelectorAll('a[href]').forEach(link => {
+                const href = link.getAttribute('href');
+        
+                // External links only
+                if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+                    link.setAttribute('target', '_blank');
+                    link.setAttribute('rel', 'noopener noreferrer');
+                }
+            });
+        </script>
     </body>
 </html>
