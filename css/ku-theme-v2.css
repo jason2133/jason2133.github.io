@@ -108,6 +108,30 @@ h2 { position: relative; padding-bottom: 1rem; color: var(--ink); font-size: 1.8
 h2::after { position: absolute; left: 0; bottom: 0; width: 2.25rem; height: 3px; border-radius: 2px; background: var(--ku-crimson); content: ""; }
 h3 { font-size: 1.2rem; color: var(--ink); line-height: 1.5; letter-spacing: -.01em; }
 h4 { font-size: 1.1rem; }
+.institution-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .45rem .7rem;
+}
+.institution-heading > span { min-width: 0; }
+.institution-logo {
+  display: block;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+.institution-logo-symbol {
+  width: 2rem;
+  height: 2rem;
+}
+.institution-logo-wide {
+  width: auto;
+  max-width: 7.25rem;
+  height: 1.35rem;
+}
+.institution-logo-samsung { max-width: 7.6rem; }
+.institution-logo-naver { max-width: 7rem; }
+.institution-logo-mobis { max-width: 6.8rem; }
 .subheading { color: var(--muted); font-size: 1rem; line-height: 1.6; font-weight: 400; }
 #about .subheading { margin: 1rem 0 1.6rem !important; }
 #about .subheading p { margin-bottom: 0; }
@@ -253,6 +277,9 @@ li::marker { color: var(--ku-crimson); }
   h2 { font-size: 1.65rem; }
   .profile-sidebar { padding-right: 1rem; padding-left: 1rem; }
   .mobile-profile-portrait { width: 7.75rem; height: 7.75rem; }
+  .institution-heading { gap: .4rem .6rem; }
+  .institution-logo-symbol { width: 1.8rem; height: 1.8rem; }
+  .institution-logo-wide { max-width: 6.5rem; height: 1.2rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
